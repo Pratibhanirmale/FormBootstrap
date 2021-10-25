@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Form using Bootstrap</title>
+</head>
+
+<body>
+    <br>
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">-- Register Here --</h1>
+    <section class="mx-auto m-5 bg-light" style="width: 700px; height: 700px;">
+        <div class="container x-5 d-flex justify-content-center align-items-center" >
+            <form class="form-control-sm x-5">
+                <!-- name -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fname">Enter first name</label>
+                        <input type="text" class="form-control" placeholder="First name" id="fname">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lname">Enter last name</label>
+                        <input type="text" class="form-control" placeholder="Last name" id="lname">
+                    </div>
+                </div>
+
+                <!-- address -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Maharashtra</option>
+                            <option>Karnataka</option>
+                            <option>UP</option>
+                            <option>MP</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+
+
+                <!-- email -->
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+
+                        <!-- password -->
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+
+                    <!-- nationality-->
+                    <div class="form-group col-md-4">
+                        <label for="exampleFormControlSelect1">Nationality</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Indian</option>
+                            <option>NRI</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <!-- contact -->
+
+                    <!-- <label for="fname">Contact Number</label>
+                    <input type="text" class="form-control" name="Phone Number" pattern="[7-9]{1}[0-9]{9}"
+                        title="Phone number with 7-9 and remaing 9 digit with 0-9">
+                -->
+
+                    <div class="form-group col-md-4 form-outline">
+                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" class="form-control form-control-md" />
+
+                    </div>
+
+
+                    <!-- gender -->
+                    <div class="form-group col-md-4 text-center">
+                        Gender<br><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Male</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <!--  languages known -->
+                    <div class="form-group col-md-4">
+                        <label for="exampleFormControlSelect2">Languages known</label>
+                        <select multiple class="form-control form-control-md" id="exampleFormControlSelect2">
+                            <option>Marathi</option>
+                            <option>Hindi</option>
+                            <option>English</option>
+                            <option>Sanskrit</option>
+                        </select>
+                    </div>
+
+                    <!-- more details -->
+                    <div class="form-group col-md-8">
+                        <label for="exampleFormControlTextarea1">Please provide more details if any -</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <!-- resume -->
+                <div class="form-group ">
+                    <label for="exampleFormControlFile1">Upload your resume here -</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <div class="form-row">
+                    <!-- confirmation -->
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I confirm that all information provided above is valid</label>
+                    </div>
+                    <br><br>
+                    <div class="col-md-12">
+                        <center>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </center>
+                    </div>
+                </div>
+                <br><br>
+
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
